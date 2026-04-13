@@ -25,6 +25,7 @@ This repository provides a simplified and user-friendly implementation of a traj
 
 - `facsimile_data.csv`  
   A synthetic dataset with the same structure as the original EHR data used in the paper.  
+  This dataset is included as the primary example data for demonstrating the generic interface.
 
 ---
 
