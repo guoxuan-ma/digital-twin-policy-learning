@@ -1,12 +1,12 @@
 # Digital twin policy learning
 
-This repository provides a simplified and user-friendly implementation of the COVID-19 booster policy learning framework described in the paper.
+This repository provides a simplified and user-friendly implementation of a trajectory-based digital twin policy learning framework, illustrated using a facsimile dataset modeled after the COVID-19 booster policy application in the paper.
 
 ---
 
 ## Repository Structure
 
-- `digital_twin_policy_learning.ipynb`  
+- `digital_twin_policy_learning.py`  
   Core implementation of the framework.  
   This notebook defines the main classes and functions, including:
   - Data preprocessing into trajectory format
@@ -30,7 +30,7 @@ This repository provides a simplified and user-friendly implementation of the CO
 
 # Main Classes
 
-All core components are defined in `digital_twin_policy_learning.ipynb`.
+All core components are defined in `digital_twin_policy_learning.py`.
 
 ## 1. `TrajectoryDataset`
 
@@ -160,15 +160,10 @@ The example notebook demonstrates a full pipeline:
 
 1. Load `facsimile_data.csv`
 2. Construct a `TrajectoryDataset`
-3. Define application-specific functions:
-   - reward function
-   - action constraints
-   - transition logic
-   - terminal condition
-4. Initialize `MicrosimQLearner`
-5. Train or load the RNN model
-6. Run Q-learning
-7. Evaluate policies:
+3. Initialize `MicrosimQLearner`
+4. Train or load the RNN model
+5. Run Q-learning
+6. Evaluate policies:
    - learned policy
    - observed policy
    - always-treat
