@@ -27,6 +27,14 @@ This repository provides a simplified and user-friendly implementation of a traj
   A synthetic dataset with the same structure as the original EHR data used in the paper.  
   This dataset is included as the primary example data for demonstrating the generic interface.
 
+- `create_model_ready_data.ipynb`  
+  Preprocessing notebook for the facsimile example data.  
+  This notebook:
+  - Loads `facsimile_data.csv`
+  - Harmonizes the column names used by the example workflow
+  - Creates derived variables such as `month_index`, `age_cat`, and `months_since_vax_cat`
+  - Standardizes age and generates dummy-variable columns for the RNN covariates
+  - Outputs `facsimile_model_ready_data.csv` for use in the example pipeline
 ---
 
 # Main Classes
@@ -169,3 +177,9 @@ The example notebook demonstrates a full pipeline:
    - observed policy
    - always-treat
    - never-treat
+
+---
+
+# Note on `create_model_ready_data.ipynb`
+
+The notebook `create_model_ready_data.ipynb` is provided to create a model-ready version of the facsimile dataset. In particular, it generates the discrete RL state variables and the processed RNN input columns used by `example.ipynb`. The resulting file, `facsimile_model_ready_data.csv`, is the recommended input for the example pipeline.
