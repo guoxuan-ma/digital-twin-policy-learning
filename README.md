@@ -24,7 +24,7 @@ This framework takes long format trajectory data, converts it into model-ready s
 
 ---
 
-# How `run.ipynb` Uses the Framework
+## How `run.ipynb` uses the Framework
 
 The example notebook demonstrates a full pipeline:
 
