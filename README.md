@@ -1,5 +1,9 @@
 # Digital twin policy learning
 
+#### Paper available on the *Journal of American Statistical Association (JASA)*: [Development of Public Health Policy by Digital Twin Microsimulation and Q-learning: A COVID-19 Booster Case Study](https://www.tandfonline.com/doi/full/10.1080/01621459.2026.2682540)
+
+#### Introduction and tutorial [website](https://public.websites.umich.edu/~jiankang/software/dtpl_website_umich/index.html)
+
 This repository provides a simplified and user-friendly implementation of a trajectory-based digital twin policy learning framework, illustrated using a facsimile dataset modeled after the COVID-19 booster policy application in the paper.
 
 ---
